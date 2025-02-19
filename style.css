@@ -1,0 +1,257 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #d35400, #e67e22);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/apetite.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.hero h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.hero p {
+    font-size: 1.2em;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff6b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    background: #ff4500;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* Cart Styling */
+#cart {
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-item:hover {
+    background-color: darkred;
+}
+
+#total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+/* Menu Section */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.menu-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    transition: 0.3s;
+}
+.menu-item:hover {
+    transform: scale(1.05);
+}
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+.menu-item h3 {
+    margin: 10px 0;
+}
+.menu-item span {
+    font-weight: bold;
+    color: #d35400;
+}
+/* Section */
+.Beverages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.Beverages {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    transition: 0.3s;
+}
+.Beverages:hover {
+    transform: scale(1.05);
+}
+.Beverages img {
+    width: 100%;
+    border-radius: 8px;
+}
+.Beverages h3 {
+    margin: 10px 0;
+}
+.Beverages span {
+    font-weight: bold;
+    color: #d35400;
+}
+
+/* Special Offers */
+.offers .offer {
+    background: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+input:focus, textarea:focus {
+    border-color: #d35400;
+    outline: none;
+}
+button {
+    padding: 12px;
+    border: none;
+    background: linear-gradient(90deg, #ff6b00, #ff4500);
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}

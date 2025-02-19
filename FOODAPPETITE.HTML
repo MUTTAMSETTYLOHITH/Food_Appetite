@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Appetite</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Food Appetite</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="">Cart</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <h1>Welcome to Food Appetite</h1>
+        <p>The best food, crafted with love.</p>
+        <img src="images/apetite.jpg" alt="Header Image" class="header-img">
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We believe in serving the freshest ingredients with delicious flavors. Food Appetite offers a blend of traditional recipes and modern culinary twists.</p>
+    </section>
+    
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/classic burger.jpg" alt="Burger">
+                <h3>Classic Burger</h3>
+                <p>A juicy beef patty, fresh veggies, and cheese on a soft bun.</p>
+                <span>$9.99</span>
+                <button class="add-to-cart" data-name="Classic Burger" data-price="9.99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/PIZZA.JPG" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Fresh mozzarella, basil, and tomato sauce on a thin crust.</p>
+                <span>$12.99</span>
+                <button class="add-to-cart" data-name="Margherita Pizza" data-price="12.99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/spagatheeti.jpg" alt="Pasta">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Creamy pasta with pancetta, eggs, and Parmesan cheese.</p>
+                <span>$14.99</span>
+                <button class="add-to-cart" data-name="Spaghetti Carbonara" data-price="14.99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/CB.jpg" alt="Chicken Biryani">
+                <h3>Chicken Biryani</h3>
+                <p>Steamy basmati rice, eggs, and marinated chicken slices cooked with Indian spices.</p>
+                <span>$20.99</span>
+                <button class="add-to-cart" data-name="Chicken Biryani" data-price="20.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beverages Section -->
+    <section id="beverages" class="beverages">
+        <h2>Beverages</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/dit coke.jpg" alt="Diet Coke">
+                <h3>Diet Coke</h3>
+                <span>$3.99</span>
+                <button class="add-to-cart" data-name="Diet Coke" data-price="3.99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/water.jpg" alt="Mineral Water">
+                <h3>Mineral Water</h3>
+                <span>$2.99</span>
+                <button class="add-to-cart" data-name="Mineral Water" data-price="2.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="Cart">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="total-price">
+            Total: $0.00
+        </div>
+        <button id="checkoutBtn">Checkout</button>
+    </section>
+    
+    
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="offers">
+        <h2>Special Offers</h2>
+        <div class="offer">
+            <h3>Family Deal</h3>
+            <p>Get 20% off on all orders for families of 4 or more!</p>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+        <div class="offer">
+            <h3>Weekend Brunch</h3>
+            <p>Every Saturday and Sunday, enjoy a special brunch menu at 15% off.</p>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"The food here is amazing! Always fresh and flavorful. Highly recommend the pizza!"</p>
+            <span>- Chinnu</span>
+        </div>
+        <div class="testimonial">
+            <p>"Best burgers in town! The service is great, and the vibe is cozy."</p>
+            <span>- Lohith</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+     <!-- Social Media Links -->
+<div class="social-links">
+    <a href="https://www.instagram.com/food/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/FoodNetwork/" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://twitter.com/yourpage" target="_blank">
+        <i class="fab fa-twitter"></i>
+    </a>
+</div>
+    <footer>
+        <p>&copy; 2025 Food Appetite. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
